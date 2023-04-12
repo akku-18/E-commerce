@@ -6,7 +6,7 @@ const Banner = () => {
     <div className="hero-banner">
       <div className="content">
         <div className="text-content">
-          <h1>Sales</h1>
+          <h1>SALES</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi culpa
             labore cum voluptates earum quidem, error ipsam ea, reprehenderit
