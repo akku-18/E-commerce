@@ -20,7 +20,7 @@ const CartItem = () => {
           </div>
           <div className="text">
             <span>3</span>
-            <span>X</span>
+            <span>x</span>
             <span>&#8377;1234</span>
           </div>
         </div>
