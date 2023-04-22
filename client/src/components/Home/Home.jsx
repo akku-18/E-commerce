@@ -8,11 +8,12 @@ import { fetchDataFromAPI } from "../../utils/api";
 import { Context } from "../../utils/context";
 
 const Home = () => {
-  const {categories, setCategories, products, setProducts} = useContext(Context);
+  const { categories, setCategories, products, setProducts } =
+  useContext(Context);
 
   useEffect(() => {
-    getCategories();
     getProducts();
+    getCategories();
   }, []);
 
   const getCategories = () => {
