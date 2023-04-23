@@ -23,7 +23,7 @@ const CartItem = () => {
                             }
                         />
                     </div>
-                    <div className="prod-details">
+                    <div className="prod-details">  
                         <span className="name">{item.attributes.title}</span>
                         <MdClose
                             className="close-btn"
