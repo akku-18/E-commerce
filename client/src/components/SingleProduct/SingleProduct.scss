@@ -116,10 +116,9 @@
                     .add-to-cart-button:hover{
                         background-color:#8903ff ;
                     }
-                    .add-to-cart-button:after{
-                        box-shadow: 1px solid #6516aa;
-                        background-color: #6516aa;
-                        transform: translateY(4px);
+                    .add-to-cart-button:active{
+                        transform: scale(0.98);
+                        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
                     }
                 }
 
