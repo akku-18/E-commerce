@@ -7,6 +7,7 @@ export const Context = createContext();
 export default function AppContext({ children }) {
   const [categories, setCategories] = useState();
   const [products, setProducts] = useState();
+  const [showCart, setShowCart] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const [cartCount, setCartCount] = useState(0);
   const [cartSubTotal, setCartSubTotal] = useState(0);
@@ -75,6 +76,8 @@ const handleAddToCart = (product, quantity) => {
         handleAddToCart,
         handleRemoveFromCart,
         handleCartProductQuantity,
+        showCart,
+        setShowCart,
       }}
     >
       {children}
