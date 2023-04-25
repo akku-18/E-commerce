@@ -9,6 +9,7 @@ import { makePaymentRequest } from "../../utils/api";
 import { loadStripe } from "@stripe/stripe-js";
 
 const Cart = ({ setShowCart }) => {
+
   const { cartSubTotal, cartItems } = useContext(Context);
 
   const stripePromise = loadStripe(
@@ -45,7 +46,7 @@ const Cart = ({ setShowCart }) => {
           <div className="empty-cart">
             <BsCartX />
             <span>No products in the cart.</span>
-            <button className="return-cta">Return to shop</button>
+            <button className="return-cta" onClick={() => setShowCart(false) } >Return to shop</button>
           </div>
         )}
 

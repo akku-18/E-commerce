@@ -12,7 +12,7 @@ const Banner = () => {
           </p>
           <div className="ctas">
             <div className="banner-cta">Read More</div>
-            <div className="banner-cta v2">Shop Now</div>
+            <div className="banner-cta v2"><a href="#category" className="shop-now" >Shop Now</a></div>
           </div>
         </div>
         <img src={BannerImg} alt="" className="banner-img"/>

@@ -37,7 +37,7 @@ const Header = () => {
           <ul className="left">
             <li onClick={() => navigate('/')} >Home</li>
             <li>About</li>
-            <li>Category</li>
+            <li><a href="#category" className="header-category" >Category</a></li>
           </ul>
           <div className="center" onClick={() => navigate('/')} >WooCommerce</div>
           <div className="right">

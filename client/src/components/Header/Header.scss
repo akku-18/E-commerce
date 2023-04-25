@@ -37,6 +37,10 @@
             &:hover {
                 opacity: 0.6;
             }
+            .header-category{
+                text-decoration: none;
+                color: white;
+            }
         }
     }
     .center {
@@ -91,7 +95,7 @@
         transform: translateY(-60px);
         animation: StickyHeader 0.3s ease forwards;
     }
-}
+}   
 
 @keyframes StickyHeader {
     0% {
