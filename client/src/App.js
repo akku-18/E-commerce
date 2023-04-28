@@ -7,11 +7,6 @@ import SingleProduct from "./components/SingleProduct/SingleProduct";
 import Newsletter from "./components/Footer/Newsletter/Newsletter";
 import AppContext from "./utils/context";
 import Success from "./components/success/Success";
-import Login from "./components/login/Login";
-import Register from "./components/register/Register";
-import { useContext } from "react";
-import { Context } from "./utils/context";
-
 
 function App() {
   return (
@@ -22,9 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/category/:id" element={<Category />} />
           <Route path="/product/:id" element={<SingleProduct />} />
-          <Route path="/success" element={<Success />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/success" element={<Success />} />          
         </Routes>
         <Newsletter />
         <Footer />

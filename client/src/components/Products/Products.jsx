@@ -1,7 +1,5 @@
 import "./Products.scss";
 import Product from "./Product/Product";
-import { useNavigate } from "react-router-dom";
-import { RxArrowLeft } from "react-icons/rx";
 
 const Products = ({ innerPage, headingText, products }) => {
 

@@ -56,7 +56,7 @@ const Footer = () => {
                         WooCommerce 2023 CREATED BY AK Garg. PREMIUM E-COMMERCE
                         SOLUTIONS.
                     </span>
-                    <img src={Payment} />
+                    <img src={Payment} alt=""/>
                 </div>
             </div>
     </footer>

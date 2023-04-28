@@ -13,8 +13,8 @@ const Home = () => {
 
   useEffect(() => {
     getProducts();
-    getCategories();
-  }, []);
+    getCategories();  // eslint-disable-next-line
+  }, []); 
 
   const getCategories = () => {
     fetchDataFromAPI("/api/categories?populate=*").then((res) => {

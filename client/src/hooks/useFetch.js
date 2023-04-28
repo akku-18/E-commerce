@@ -4,7 +4,7 @@ const useFetch = (endpoint) => {
     const [data, setData] = useState();
 
     useEffect(() => {
-        makeApiCall();
+        makeApiCall(); // eslint-disable-next-line 
     }, [endpoint]);
 
     const makeApiCall = async () => {

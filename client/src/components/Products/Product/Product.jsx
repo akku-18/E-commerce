@@ -1,7 +1,5 @@
 import "./Product.scss";
 import {useNavigate} from 'react-router-dom';
-import { RxArrowLeft } from "react-icons/rx";
-
 
 const Product = ({id, data}) => {
     const navigate = useNavigate()
