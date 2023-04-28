@@ -11,6 +11,7 @@ export default function AppContext({ children }) {
   const [cartItems, setCartItems] = useState([]);
   const [cartCount, setCartCount] = useState(0);
   const [cartSubTotal, setCartSubTotal] = useState(0);
+  const [login, setLogin] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -78,7 +79,9 @@ const handleAddToCart = (product, quantity) => {
         handleCartProductQuantity,
         showCart,
         setShowCart,
-      }}
+        login, 
+        setLogin
+        }}
     >
       {children}
     </Context.Provider>

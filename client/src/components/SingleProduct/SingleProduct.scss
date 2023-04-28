@@ -23,6 +23,13 @@
                 @include md {
                     width: 600px;
                     height: 600px;
+                .left-arrow-prod{
+                    font-size: 20px;
+                    position: absolute;
+                    left: 16%;
+                    cursor: pointer;
+                    animation: blink 3s linear infinite;
+                }
                 }
                 img {
                     width: 100%;
@@ -152,3 +159,11 @@
         }
     }
 }
+
+@keyframes blink{
+    0%{opacity: .1;}
+    25%{opacity:.5;}
+    50%{opacity: 1;}
+    75%{opacity:.5;}
+    100%{opacity: .1;}
+    }

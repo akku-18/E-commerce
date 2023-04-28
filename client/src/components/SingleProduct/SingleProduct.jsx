@@ -6,6 +6,9 @@ import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import RelatedProducts from "./RelatedProducts/RelatedProducts";
 
+import { useNavigate } from "react-router-dom";
+import { RxArrowLeft } from "react-icons/rx";
+
 import {
   FaFacebookF,
   FaTwitter,
@@ -16,6 +19,8 @@ import {
 } from "react-icons/fa";
 
 const SingleProduct = () => {
+  const navigate = useNavigate();
+
   const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
   const { handleAddToCart } = useContext(Context);
@@ -32,7 +37,7 @@ const SingleProduct = () => {
   };
 
   if (!data) return;
-  
+
   const product = data?.data?.[0]?.attributes;
 
   return (
@@ -40,6 +45,10 @@ const SingleProduct = () => {
       <div className="layout">
         <div className="single-product-page">
           <div className="left">
+            <RxArrowLeft
+              className="left-arrow-prod"
+              onClick={() => navigate("/")}
+            />
             <img
               src={
                 process.env.REACT_APP_DEV_URL +
