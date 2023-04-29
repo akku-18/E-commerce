@@ -61,6 +61,19 @@
         @include md {
             gap: 25px;
         }
+        .auth-button{
+            background-color: white;
+            border: none;
+            color: black;
+            padding: 4px 7px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 15px;
+        }
+        .auth-button:hover{
+            color: rgba(0, 0, 0, 0.7);
+        }
         svg {
             font-size: 20px;
             cursor: pointer;
